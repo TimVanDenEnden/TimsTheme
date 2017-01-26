@@ -1,0 +1,235 @@
+/*
+Theme Name: tim
+Author: Tim van den Enden
+Description: School opdracht build wordpress theme from nothing to something!
+Version: 0.0.1
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: arial;
+	background: #EDEFF0;
+
+}
+
+/* My Nav */
+
+header {
+	width: 100%;
+	height: 50px;
+	background: #222222;
+	color: #fff;
+}
+
+div.nav-container {
+    width: 82%;
+    margin: 0px auto;
+}
+
+div.nav-title {
+	width: 50%;
+    height: 45px;
+    padding-top: 5px;
+    color: #fff;
+}
+
+div.nav-title a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+div.nav-title small {
+	color: #04BFC1;
+	font-size: 20px;
+}
+
+
+nav {
+	width: 50%;
+    height: 45px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+.nav li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-weight: 500;	
+}
+
+.nav a {
+    color: #fff;
+    width: 55px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+div.navIcon {
+    width: 25px;
+    height: 25px;
+    background: url(/wp-content/themes/tim/assets/images/navIcon.png) no-repeat;
+    background-size: 25px 25px;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    display: none;
+
+}
+
+/* End My Nav */
+
+
+main {
+	background: #fff;
+   	padding-bottom: 60px;
+   	box-shadow: 0 1px 0 rgba(0,0,0,0.05) inset,0 2px 0 rgba(0,0,0,0.1);
+   	width: 80%;
+   	border-radius: 5px;
+   	border-top: #04BFC1 4px solid;
+    margin: 20px auto 50px auto;
+}
+
+div.title {
+	background-color: #f9fafa;
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+
+div.title h1 {
+	padding: 20px 0px 0px 20px;
+}
+
+div.title p {
+	padding-left: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background: #EDEFF0;
+  text-align: center;
+}
+
+ div.footer {
+ 	border-top: 1px solid #e2e5e8;
+ 	width: 80%;
+ 	margin: 10px auto;
+ 	height: 80px;
+ 	padding: 20px;
+    display: flex;
+ }
+
+ div.footer p {
+ 	color: #b2bac2;
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+ }
+
+ div.social {
+ 	display: flex;
+    width: 70%;
+    font-size: 20px;
+ }
+
+ div.social div {
+ 	padding-right: 10px;
+ }
+
+ div.social div.footer-title {
+ 	padding-top: 4px;
+ 	font-size: 13px;
+	color: #b2bac2;
+ }
+
+ div.copyright {
+    width: 30%;
+ }
+
+ i {
+ 	color: #b2bac2;
+ }
+
+ div.post-content {
+ 	width: 100%;
+ }
+
+div.post {
+	    border-top: 1px solid #eee;
+    padding: 20px;
+}
+
+p.post-info {
+	padding-left: 10px;
+}
+
+p.contentPost {
+	padding-top: 10px;
+}
+
+
+/* Flex Direction classes */
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Media devices */
+@media (max-width: 500px) {
+	div.nav-container {
+		width: 100%;
+	}
+
+	div.title h1 {
+		font-size: 23px;
+	}
+
+	div.navIcon {
+	    display: block;
+	}
+
+	div.navList {
+		display: none;
+	}
+
+	div.navList.active {
+		position: absolute;
+    	width: 100%;
+    	background: #fff;
+    	border-bottom: 1px solid #bbb;
+    	/* color: #bbb; */
+    	top: 50px;
+    	left: 0;
+    	display: inline-block;
+	}
+
+	div.navList.active  a{
+    	 color: grey; 
+	}
+
+	.nav {
+		text-align: left;
+		padding-left: 40px;
+	}
+}
